@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me | Amni Yasmi Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>
+function openImg(){
+  document.getElementById("overlay").style.display="flex";
+}
+function closeImg(){
+  document.getElementById("overlay").style.display="none";
+}
+</script>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>About Me</h1>
+</header>
+
+<section>
+  <h2>Personal Profile</h2>
+
+  <div class="about-container">
+    <img src="profile.jpg" alt="Profile" class="profile-img" onclick="openImg()">
+
+    <div class="about-content">
+      <p>
+        Hello! My name is <b>Nur Amni Batrisyia Binti Yasmi</b>.
+        I am a Malaysian student who values growth, responsibility,
+        and meaningful progress in academic and personal life.
+      </p>
+
+      <table>
+        <tr><th>Full Name</th><td>Nur Amni Batrisyia Binti Yasmi</td></tr>
+        <tr><th>Gender</th><td>Female</td></tr>
+        <tr><th>Date of Birth</th><td>19 July 2005</td></tr>
+        <tr>
+          <th>Place of Birth</th>
+          <td>
+            <a href="https://www.google.com/maps/search/Hospital+Selayang" target="_blank">
+              Hospital Selayang, Selangor
+            </a>
+          </td>
+        </tr>
+        <tr><th>Nationality</th><td>Malaysian</td></tr>
+        <tr><th>Religion</th><td>Islam</td></tr>
+        <tr>
+          <th>Address</th>
+          <td>
+            <a href="https://www.google.com/maps/search/Kampung+Orang+Asli+Segamat+Kecil+Labis+Johor" target="_blank">
+              Kampung Orang Asli Segamat Kecil, Labis, Johor
+            </a>
+          </td>
+        </tr>
+        <tr><th>Current Status</th><td>Single</td></tr>
+      </table>
+
+      <div class="skills">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <b>Technical Skills</b>
+            HTML, CSS, Basic JavaScript, Microsoft Word, PowerPoint
+          </div>
+          <div class="skill-box">
+            <b>Soft Skills</b>
+            Time Management, Responsibility, Teamwork, Communication
+          </div>
+          <div class="skill-box">
+            <b>Personal Strengths</b>
+            Calm under pressure, Organized, Detail-oriented
+          </div>
+          <div class="skill-box">
+            <b>Language</b>
+            Bahasa Melayu (Native), English (Intermediate)
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>©️ Amni Yasmi 2025</p>
+</footer>
+
+<div class="overlay" id="overlay" onclick="closeImg()">
+  <img src="profile.jpg" alt="Profile Enlarged">
+</div>
+
+</body>
+</html>

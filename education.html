@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Education | Amni Yasmi Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>
+function openImg(src){
+  const overlay=document.getElementById("overlay");
+  overlay.querySelector("img").src=src;
+  overlay.style.display="flex";
+}
+function closeImg(){
+  document.getElementById("overlay").style.display="none";
+}
+</script>
+
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>Education</h1>
+</header>
+
+<section>
+<h2>Educational Journey</h2>
+
+<!-- ===== PRESCHOOL ===== -->
+<div class="edu-card">
+  <div class="edu-image">
+    <img src="pra.jpg" alt="1. Preschool" onclick="openImg('pra.jpg')">
+  </div>
+  <div class="edu-content">
+    <h3>1. Preschool Education</h3>
+    <span>Prasekolah SK Bukit Beruntung | 2011</span>
+    <ul>
+      <li>Early childhood learning and social development</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== PRIMARY SCHOOL (SELANGOR) ===== -->
+<div class="edu-card">
+  <div class="edu-image">
+    <img src="sktbr2.jpg" alt="2. Primary School" onclick="openImg('sktbr2.jpg')">
+  </div>
+  <div class="edu-content">
+    <h3>2. Primary School</h3>
+    <span>Sekolah Kebangsaan Taman Bunga Raya 2, Rawang, Selangor | 2012 – May 2017</span>
+    <ul>
+      <li>Transferred due to relocation</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== RELIGIOUS PRIMARY SCHOOL ===== -->
+<div class="edu-card">
+  <div class="edu-image">
+    <img src="skagama.jpg" alt="3. Religious School" onclick="openImg('skagama.jpg')">
+  </div>
+  <div class="edu-content">
+    <h3>3. Religious Primary School</h3>
+    <span>School Rendah Agama Bukit Sentosa Fasa 1, Rawang, Selangor | 2015 – 2016</span>
+    <ul>
+      <li>Basic Islamic studies and religious education</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== PRIMARY SCHOOL (JOHOR) ===== -->
+<div class="edu-card">
+  <div class="edu-image">
+    <img src="sksk.jpg" alt="4. Primary School Johor" onclick="openImg('sksk.jpg')">
+  </div>
+  <div class="edu-content">
+    <h3>4. Primary School</h3>
+    <span>Sekolah Kebangsaan Segamat Kecil, Segamat, Johor | June - Dec 2017</span>
+    <ul>
+      <li>Completed primary education</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== SECONDARY SCHOOL ===== -->
+<div class="edu-card">
+  <div class="edu-image">
+    <img src="smk.jpg" alt="5. Secondary School" onclick="openImg('smk.jpg')">
+  </div>
+  <div class="edu-content">
+    <h3>5. Secondary School</h3>
+    <span>Sekolah Menengah Kebangsaan Dato Bentara Dalam, Segamat, Johor | 2018 – 2022</span>
+    <ul>
+      <li>SPM: 3A 4B 2C</li>
+      <li>Stream: General Science & Business with Islamic Studies</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== DIPLOMA ===== -->
+<div class="edu-card">
+  <div class="edu-image">
+    <img src="uitm.jpg" alt="6. University" onclick="openImg('uitm.jpg')">
+  </div>
+  <div class="edu-content">
+    <h3>6. Diploma in Information Management</h3>
+    <span>Universiti Teknologi MARA, Johor Branch, Segamat Campus | 2023 – Present</span>
+    <ul>
+      <li>Current: Semester 5 (Final Semester)</li>
+      <li>Faculty: Science Information</li>
+      <li>Relevant coursework: Electronic Records Management, Document Management Systems, Content Management Systems, Information Governance, Data Management</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<footer>
+<p>© Amni Yasmi 2025</p>
+</footer>
+
+<!-- IMAGE OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeImg()">
+  <img src="">
+</div>
+
+</body>
+</html>

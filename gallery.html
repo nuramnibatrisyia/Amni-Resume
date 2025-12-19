@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery | Amni Yasmi Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet"> <!-- link ke style.css -->
+
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>Gallery</h1>
+</header>
+
+<section>
+  <h2>Family</h2>
+
+  <div class="family-row">
+    <div class="family-big">
+      <img src="family.jpg" onclick="openImg('family.jpg')">
+      <p class="family-caption">Family Portrait</p>
+    </div>
+
+    <div class="family-side">
+      <img src="siblings.jpg" onclick="openImg('siblings.jpg')">
+      <p class="family-caption">My Beloved Siblings</p>
+    </div>
+  </div>
+
+  <div class="family-grid">
+    <div class="family-member"><img src="abah2.jpg"><p>Abah</p></div>
+    <div class="family-member"><img src="mama.jpg"><p>Mama</p></div>
+    <div class="family-member"><img src="atoknenek.jpg"><p>Atok & Nenek</p></div>
+    <div class="family-member"><img src="akin.jpg"><p>Brother</p></div>
+    <div class="family-member"><img src="asa.jpg"><p>Younger Sister</p></div>
+    <div class="family-member"><img src="soleh.jpg"><p>Younger Brother</p></div>
+    <div class="family-member"><img src="zara.jpg"><p>Cousin</p></div>
+  </div>
+
+  <h2>Friendship – High School (Rumah Panjang)</h2>
+  <div class="gallery">
+    <img src="rp1.jpg">
+    <img src="rp2.jpg">
+    <img src="rp3.jpg">
+  </div>
+
+  <h2>Friendship – Diploma</h2>
+  <div class="gallery">
+    <img src="kacip1.jpg">
+    <img src="rumet.jpg">
+    <img src="geng.jpg">
+  </div>
+
+  <h2>Video Memories</h2>
+  <div class="gallery">
+    <video controls src="iftar.mp4"></video>
+    <video controls src="vkacip.mp4"></video>
+    <video controls src="vrumet.mp4"></video>
+    <video controls src="arkib.mp4"></video>
+  </div>
+</section>
+
+<div class="audio-player">
+  <button onclick="toggleAudio()">Play / Pause Music</button>
+  <audio id="bgAudio">
+    <source src="song.mp3">
+  </audio>
+</div>
+
+<!-- Overlay untuk zoom gambar -->
+<div class="overlay" id="overlay" onclick="closeOverlay()">
+  <img id="overlayImg" src="">
+</div>
+
+<script>
+const audio = document.getElementById("bgAudio");
+const startTime = 80;  // 1:20 minit
+const endTime = 140;   // 2:20 minit
+
+function toggleAudio() {
+  if(audio.paused){
+    audio.currentTime = startTime;
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
+audio.addEventListener("timeupdate",()=>{
+  if(audio.currentTime>=endTime){
+    audio.currentTime=startTime;
+    audio.play();
+  }
+});
+
+// Function untuk overlay gambar
+function openImg(src){
+  document.getElementById("overlayImg").src = src;
+  document.getElementById("overlay").style.display = "flex";
+}
+
+function closeOverlay(){
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<footer style="text-align:center;padding:30px;color:#b8c7d1">
+  ©️ Amni Yasmi 2025
+</footer>
+
+</body>
+</html>

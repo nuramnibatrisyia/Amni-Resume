@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experience | Amni Yasmi Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>
+function openImg(src){
+  const overlay = document.getElementById("overlay");
+  overlay.querySelector("img").src = src;
+  overlay.style.display = "flex";
+}
+
+function closeImg(){
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>Experience</h1>
+</header>
+
+<section>
+  <h2>Hospital Segamat Internship</h2>
+  <div class="exp-card" onclick="openImg('hs.jpg')">
+    <div class="exp-image">
+      <img src="hs.jpg" alt="Hospital Segamat">
+    </div>
+    <div class="exp-content">
+      <h3>Clinical Support Intern – Quality Unit / Medical Records</h3>
+      <span>Hospital Segamat, Johor | 27 July 2025 – 19 September 2025 | 2-month internship</span>
+      <ul>
+        <li>Rotated across sub-units: Medical Reports, Statistics, and Medical Records</li>
+        <li>Assisted in quality audits and workflow improvement</li>
+        <li>Handled patient documents (BHT), ensuring proper storage and tracking</li>
+        <li>Participated in statistical documentation and data handling</li>
+        <li>Learned hospital quality standards and workflow across departments</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="kualiti.jpg" alt="Quality Unit Task 1" onclick="openImg('kualiti.jpg')">
+      <p>Daily tasks in Quality Unit</p>
+    </div>
+    <div class="gallery-item">
+      <img src="team.jpg" alt="Quality Unit Task 2" onclick="openImg('team.jpg')">
+      <p>Team at Quality Unit</p>
+    </div>
+    <div class="gallery-item">
+      <img src="amni3.jpg" alt="Quality Unit Task 3" onclick="openImg('amni3.jpg')">
+      <p>My daily routine</p>
+    </div>
+    <div class="gallery-item">
+      <img src="laporan.jpg" alt="Medical Reports Unit" onclick="openImg('laporan.jpg')">
+      <p>Medical Reports Unit</p>
+    </div>
+    <div class="gallery-item">
+      <img src="statistik.jpg" alt="Statistics Unit" onclick="openImg('statistik.jpg')">
+      <p>Statistics Unit</p>
+    </div>
+    <div class="gallery-item">
+      <img src="rekod.jpg" alt="Medical Records Storage" onclick="openImg('rekod.jpg')">
+      <p>Medical Records Storage</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>©️ Amni Yasmi 2025</p>
+</footer>
+
+<div class="overlay" id="overlay" onclick="closeImg()">
+  <img src="">
+</div>
+
+</body>
+</html>
